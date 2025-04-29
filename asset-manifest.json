@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dayyes34/personal.git/static/css/main.852b6e26.css",
+    "main.js": "/dayyes34/personal.git/static/js/main.ef1bfe37.js",
+    "index.html": "/dayyes34/personal.git/index.html",
+    "main.852b6e26.css.map": "/dayyes34/personal.git/static/css/main.852b6e26.css.map",
+    "main.ef1bfe37.js.map": "/dayyes34/personal.git/static/js/main.ef1bfe37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.852b6e26.css",
+    "static/js/main.ef1bfe37.js"
+  ]
+}
