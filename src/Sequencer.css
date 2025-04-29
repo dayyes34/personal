@@ -1,0 +1,278 @@
+/* Sequencer.css - Адаптивный дизайн с фиксированными размерами для разных устройств */
+
+/* Контейнер для всех блоков */
+.blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    justify-content: center;
+  }
+  
+  /* Контейнер для одного блока - размеры подбираются под устройство */
+  .block-container {
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    /* Базовые размеры устанавливаются в медиа-запросах */
+  }
+  
+/* Стили для секвенсера */
+.sequencer {
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent; /* Прозрачный фон */
+    border: none; /* Убрана граница */
+  }
+  
+  
+  /* Главная часть секвенсера */
+  .sequencer-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Стили для заголовка секвенсера */
+  .sequencer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #d9c6ff;
+  }
+  
+  /* Стили для заголовка блока */
+  .sequencer-header h2 {
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #c8b3e8;
+  }
+  
+  /* Стили для кнопки LOOP */
+  .loop-button {
+    background-color: #6a3abc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loop-button:hover {
+    background-color: #8b4edc;
+    transform: translateY(-1px);
+  }
+  
+  .loop-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Сетка для секвенсера */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+  }
+  
+  /* Стили для ряда трека */
+  .track-row {
+    display: flex;
+    gap: 3px;
+    width: 100%;
+  }
+  
+  /* Стили для ячейки сетки */
+  /* Стили для ячейки сетки */
+.grid-cell {
+    flex: 1;
+    aspect-ratio: 1/1;
+    background: transparent;
+    border: 1px solid #3498db; /* Голубая обводка */
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+  }
+  
+  .grid-cell:hover {
+    border-color: #2980b9; /* Немного темнее голубой при наведении */
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.4); /* Легкое свечение при наведении */
+  }
+  
+  
+  /* Индикатор шага */
+  .grid-cell::before {
+    content: attr(data-globalstep);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 7px;
+    color: rgba(216, 190, 255, 0.6);
+    pointer-events: none;
+  }
+  
+  /* ====== МЕДИА-ЗАПРОСЫ ДЛЯ РАЗНЫХ УСТРОЙСТВ ====== */
+  
+  /* Мобильные устройства (до 380px) - 2 блока в ряд, компактные */
+  @media (max-width: 380px) {
+    .blocks-container {
+      gap: 6px;
+      padding: 6px;
+    }
+  
+    .block-container {
+      flex: 0 0 calc(50% - 3px);
+      max-width: calc(50% - 3px);
+    }
+  
+    .sequencer {
+      padding: 5px;
+      border-radius: 4px;
+    }
+  
+    .sequencer-header {
+      height: 20px;
+      margin-bottom: 5px;
+    }
+  
+    .sequencer-header h2 {
+      font-size: 0.75rem;
+    }
+  
+    .loop-button {
+      font-size: 0.65rem;
+      padding: 2px 5px;
+      height: 16px;
+    }
+  
+    .grid {
+      gap: 2px;
+    }
+  
+    .track-row {
+      gap: 2px;
+    }
+  
+    .grid-cell {
+      border-radius: 2px;
+    }
+  
+    .grid-cell::before {
+      font-size: 6px;
+      top: 1px;
+      left: 1px;
+    }
+  }
+  
+  /* Планшеты и малые настольные (381px - 820px) - 2 блока в ряд, более просторные */
+  @media (min-width: 381px) and (max-width: 760px) {
+    .blocks-container {
+      padding: 0px;
+      gap: 6px;
+    }
+  
+    .block-container {
+      flex: 0 0 calc(50% - 8px);
+      max-width: calc(50% - 8px);
+    }
+  
+    .sequencer-header {
+      height: 25px;
+      margin-bottom: 10px;
+    }
+  
+    .sequencer-header h2 {
+      font-size: 0.9rem;
+    }
+  
+    .loop-button {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      height: 20px;
+    }
+  }
+  
+  /* Средние экраны (761px - 1200px) - 2 блока в ряд с увеличенным размером */
+@media (min-width: 761px) and (max-width: 1200px) {
+    .blocks-container {
+      padding: 20px;
+      gap: 70px;
+    }
+  
+    .block-container {
+      flex: 0 0 calc(50% - 10px); /* Изменено с 33.333% на 50% */
+      max-width: calc(33% - 10px); /* Изменено с 33.333% на 50% */
+    }
+  
+    .sequencer {
+      padding: 1px;
+    }
+  
+    .sequencer-header {
+      height: 20px;
+      margin-bottom: 12px;
+    }
+  
+    .sequencer-header h2 {
+      font-size: 1rem;
+    }
+  
+    .loop-button {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      height: 24px;
+    }
+  
+    .grid {
+      gap: 4px;
+    }
+  
+    .track-row {
+      gap: 4px;
+    }
+  }
+  
+  /* Большие экраны (1201px - 1600px) - 4 блока в ряд */
+  @media (min-width: 1201px) {
+    .blocks-container {
+      padding: 1px;
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  
+    .block-container {
+      flex: 0 0 calc(25% - 19px);
+      max-width: calc(25% - 19px);
+    }
+  
+    .sequencer-header {
+      height: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .sequencer-header h2 {
+      font-size: 1.1rem;
+    }
+  
+    .loop-button {
+      font-size: 0.85rem;
+      padding: 5px 5px;
+      height: 23px;
+    }
+  }
+  
+  
