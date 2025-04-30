@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://dayyes34.github.io/personal/static/css/main.c320a9ec.css",
-    "main.js": "https://dayyes34.github.io/personal/static/js/main.633e3544.js",
+    "main.css": "https://dayyes34.github.io/personal/static/css/main.9c5f7b58.css",
+    "main.js": "https://dayyes34.github.io/personal/static/js/main.a416f68a.js",
     "static/media/menubg.png": "https://dayyes34.github.io/personal/static/media/menubg.6eb5a69c610014771d1a.png",
     "static/media/bg.PNG": "https://dayyes34.github.io/personal/static/media/bg.4dc05e6570297a1538e8.PNG",
     "static/media/mangrove.ttf": "https://dayyes34.github.io/personal/static/media/mangrove.7c8ac4f493c988b19cec.ttf",
     "index.html": "https://dayyes34.github.io/personal/index.html",
-    "main.c320a9ec.css.map": "https://dayyes34.github.io/personal/static/css/main.c320a9ec.css.map",
-    "main.633e3544.js.map": "https://dayyes34.github.io/personal/static/js/main.633e3544.js.map"
+    "main.9c5f7b58.css.map": "https://dayyes34.github.io/personal/static/css/main.9c5f7b58.css.map",
+    "main.a416f68a.js.map": "https://dayyes34.github.io/personal/static/js/main.a416f68a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c320a9ec.css",
-    "static/js/main.633e3544.js"
+    "static/css/main.9c5f7b58.css",
+    "static/js/main.a416f68a.js"
   ]
 }
