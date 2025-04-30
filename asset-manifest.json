@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "https://dayyes34.github.io/personal/static/css/main.845ece8c.css",
+    "main.css": "https://dayyes34.github.io/personal/static/css/main.c5339d3e.css",
     "main.js": "https://dayyes34.github.io/personal/static/js/main.0c2d9633.js",
     "static/media/menubg.png": "https://dayyes34.github.io/personal/static/media/menubg.6eb5a69c610014771d1a.png",
     "static/media/bg.PNG": "https://dayyes34.github.io/personal/static/media/bg.4dc05e6570297a1538e8.PNG",
     "static/media/mangrove.ttf": "https://dayyes34.github.io/personal/static/media/mangrove.7c8ac4f493c988b19cec.ttf",
     "index.html": "https://dayyes34.github.io/personal/index.html",
-    "main.845ece8c.css.map": "https://dayyes34.github.io/personal/static/css/main.845ece8c.css.map",
+    "main.c5339d3e.css.map": "https://dayyes34.github.io/personal/static/css/main.c5339d3e.css.map",
     "main.0c2d9633.js.map": "https://dayyes34.github.io/personal/static/js/main.0c2d9633.js.map"
   },
   "entrypoints": [
-    "static/css/main.845ece8c.css",
+    "static/css/main.c5339d3e.css",
     "static/js/main.0c2d9633.js"
   ]
 }
