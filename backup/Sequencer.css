@@ -1,5 +1,3 @@
-
-
 /* Sequencer.css - Адаптивный дизайн с фиксированными размерами для разных устройств */
 
 /* Контейнер для всех блоков старая версия */
@@ -60,7 +58,7 @@
   
   /* Стили для кнопки LOOP */
   .loop-button {
-    background-color: #7B42FF;
+    background-color: #6a3abc;
     color: white;
     border: none;
     border-radius: 4px;
@@ -96,33 +94,25 @@
     width: 100%;
   }
   
-/* Стили для ячейки сетки */
+  /* Стили для ячейки сетки */
 .grid-cell {
-  flex: 1;
-  aspect-ratio: 1/1;
-  background: transparent;
-  border: 1px solid #364156; /* Голубая обводка */
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
- /* .grid-cell:hover {
-    border-color: #32F9E5; ]
-    box-shadow: 0 0 3px rgba(52, 152, 219, 0.4); /* Легкое свечение при наведении
-  } */
-
-  .grid-cell.active {
-    border-color: #32F9E5;
+    flex: 1;
+    aspect-ratio: 1/1;
+    background: transparent;
+    border: 1px solid #3498db; /* Голубая обводка */
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
   }
-  .instrument-indicator {
-    font-size: 0.5em;
-    color: #fff;
+  
+  .grid-cell:hover {
+    border-color: #2980b9; /* Немного темнее голубой при наведении */
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.4); /* Легкое свечение при наведении */
+  }
+  .grid-cell.active {
+    background-color: #bbdefb;
+    border-color: #2196F3;
   }
   
   .block-container.inactive {
@@ -142,13 +132,7 @@
     width: 70%;
     height: 70%;
     object-fit: contain;
-      /* Убедимся, что иконка не сдвинется от центра */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-  
+  }
   
   /* Стили для долгого нажатия */
   .track-row {
@@ -158,93 +142,18 @@
     -ms-user-select: none;
   }
   
-/* Стили для активных и проигрываемых ячеек */
 
-/* Активная ячейка (имеет инструмент) */
-.grid-cell.active {
-  background: transparent;
-  border: 1px solid #32F9E5;
-  color: white;
+/* Стиль для текущей воспроизводимой ячейки */
+.grid-cell.current {
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+  background-color: rgba(255, 165, 0, 0.3);
 }
 
-/* Ячейка, которая проигрывается в данный момент */
-.grid-cell.playing {
-  background: transparent !important;
-  border: 1px solid #F9CB40;
-  animation: pulse 0.2s infinite alternate;
-  box-shadow: 0 0 10px rgba(255, 87, 51, 0.8);
-  transform: scale(1.1);
-  z-index: 10;
+/* Стиль для активной текущей ячейки */
+.grid-cell.active.current {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 99, 71, 0.5);
 }
-
-/* Анимация пульсации для проигрываемых ячеек */
-@keyframes pulse {
-  from {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-  to {
-    opacity: 0.9;
-    transform: scale(1.15);
-  }
-}
-
-/* Активный блок (текущий блок в последовательности) */
-.block-container.active {
-  transition: all 0.3s ease;
-  /*box-shadow: 0 0 15px rgba(78, 110, 142, 0.5); */
-  opacity: 1;
-}
-
-/* Неактивный блок (другие блоки) */
-.block-container.inactive {
-  opacity: 0.7;
-  transition: all 0.3s ease;
-}
-
-.cells-container {
-  display: flex;
-  width: 900px; /* Фиксированная ширина контейнера */
-  height: 60px;
-  overflow-x: auto; /* Добавляем возможно */
-}
-
-/* Улучшенные стили для транспортных контролов */
-.transport-controls {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-}
-
-.transport-controls button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  background-color: #333;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.transport-controls button:hover {
-  background-color: #555;
-}
-
-/* Улучшенный стиль индикатора инструмента */
-.instrument-indicator {
-  font-size: 10px;
-  font-weight: bold;
-}
-/* Добавить в существующий CSS файл */
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
-}
-
   
   /* ====== МЕДИА-ЗАПРОСЫ ДЛЯ РАЗНЫХ УСТРОЙСТВ ====== */
   

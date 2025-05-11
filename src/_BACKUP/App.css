@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* предотвращает скроллинг */
+  background-color: #0F0A23;
+ /* background-image: url('img/ui/bg.PNG');*/
+  background-size: cover; /* изображение масштабируется чтобы покрыть весь контейнер */
+  background-position: center; /* центрирует изображение */
+  background-repeat: no-repeat; /* предотвращает повторение изображения */
+}
+
+.App {
+  display: grid;
+  grid-template-rows: 5% 90% 5%; /* распределение пространства между контейнерами */
+  height: 100vh; /* занимает полную высоту видимого окна */
+  width: 100%;
+  overflow: hidden;
+}
+
+.cover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cover-image {
+  max-height: 80%;
+  max-width: 80%;
+  object-fit: contain; /* сохраняет пропорции изображения */
+}
+
+.sequencer-container {
+  overflow: auto; /* позволяет прокручивать содержимое секвенсора, если оно не помещается */
+  padding: 10px;
+}
+
+/* Обновим стили для контейнера плеера */
+.player-container {
+  margin: -90px auto 20px; /* Отрицательный margin-top поднимает элемент вверх */
+  max-width: 800px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5; /* Убедимся, что плеер будет выше других элементов */
+}
+

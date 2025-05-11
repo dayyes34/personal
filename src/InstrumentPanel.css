@@ -1,0 +1,114 @@
+.instrument-panel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.instrument-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: rgba(30, 25, 60, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.instrument-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.instrument-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(54, 65, 86, 0.5);
+  border: 1px solid #364156;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.instrument-item:hover {
+  transform: translateY(-2px);
+  border-color: #32F9E5;
+  box-shadow: 0 4px 8px rgba(50, 249, 229, 0.3);
+}
+
+.instrument-item.selected {
+  background-color: rgba(50, 249, 229, 0.2);
+  border-color: #32F9E5;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(50, 249, 229, 0.5);
+}
+
+.instrument-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  transition: all 0.2s ease;
+  filter: brightness(1.2);
+}
+
+.instrument-item.selected img {
+  filter: brightness(1.5);
+}
+
+.instrument-item.eraser {
+  background-color: rgba(255, 82, 82, 0.2);
+  border-color: #ff5252;
+}
+
+.instrument-item.eraser.selected {
+  background-color: rgba(255, 82, 82, 0.4);
+  border-color: #ff5252;
+  box-shadow: 0 0 10px rgba(255, 82, 82, 0.5);
+}
+
+.instrument-name {
+  font-size: 12px;
+  text-align: center;
+  color: #c8b3e8;
+}
+
+/* Стили для панели управления */
+.panel-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.clear-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 82, 82, 0.3);
+  border: 1px solid #ff5252;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clear-button:hover {
+  background-color: rgba(255, 82, 82, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 82, 82, 0.4);
+}
+
+.clear-icon {
+  font-size: 24px;
+  font-weight: bold;
+}
