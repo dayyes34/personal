@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "https://dayyes34.github.io/personal/static/css/main.e5fc4018.css",
-    "main.js": "https://dayyes34.github.io/personal/static/js/main.6791c5a9.js",
-    "static/media/mangrove.ttf": "https://dayyes34.github.io/personal/static/media/mangrove.7c8ac4f493c988b19cec.ttf",
+    "main.css": "https://dayyes34.github.io/personal/static/css/main.6ce3dd1c.css",
+    "main.js": "https://dayyes34.github.io/personal/static/js/main.5ea00f21.js",
     "index.html": "https://dayyes34.github.io/personal/index.html",
-    "main.e5fc4018.css.map": "https://dayyes34.github.io/personal/static/css/main.e5fc4018.css.map",
-    "main.6791c5a9.js.map": "https://dayyes34.github.io/personal/static/js/main.6791c5a9.js.map"
+    "main.6ce3dd1c.css.map": "https://dayyes34.github.io/personal/static/css/main.6ce3dd1c.css.map",
+    "main.5ea00f21.js.map": "https://dayyes34.github.io/personal/static/js/main.5ea00f21.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5fc4018.css",
-    "static/js/main.6791c5a9.js"
+    "static/css/main.6ce3dd1c.css",
+    "static/js/main.5ea00f21.js"
   ]
 }
