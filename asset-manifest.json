@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://rhythmcapsule.ru/app/static/css/main.b0c987f2.css",
-    "main.js": "https://rhythmcapsule.ru/app/static/js/main.8526422a.js",
+    "main.js": "https://rhythmcapsule.ru/app/static/js/main.4bbf68df.js",
     "index.html": "https://rhythmcapsule.ru/app/index.html",
     "main.b0c987f2.css.map": "https://rhythmcapsule.ru/app/static/css/main.b0c987f2.css.map",
-    "main.8526422a.js.map": "https://rhythmcapsule.ru/app/static/js/main.8526422a.js.map"
+    "main.4bbf68df.js.map": "https://rhythmcapsule.ru/app/static/js/main.4bbf68df.js.map"
   },
   "entrypoints": [
     "static/css/main.b0c987f2.css",
-    "static/js/main.8526422a.js"
+    "static/js/main.4bbf68df.js"
   ]
 }
