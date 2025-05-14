@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://dayyes34.github.io/personal/static/css/main.6ce3dd1c.css",
-    "main.js": "https://dayyes34.github.io/personal/static/js/main.68369084.js",
-    "index.html": "https://dayyes34.github.io/personal/index.html",
-    "main.6ce3dd1c.css.map": "https://dayyes34.github.io/personal/static/css/main.6ce3dd1c.css.map",
-    "main.68369084.js.map": "https://dayyes34.github.io/personal/static/js/main.68369084.js.map"
+    "main.css": "https://rhythmcapsule.ru/app/static/css/main.b0c987f2.css",
+    "main.js": "https://rhythmcapsule.ru/app/static/js/main.8526422a.js",
+    "index.html": "https://rhythmcapsule.ru/app/index.html",
+    "main.b0c987f2.css.map": "https://rhythmcapsule.ru/app/static/css/main.b0c987f2.css.map",
+    "main.8526422a.js.map": "https://rhythmcapsule.ru/app/static/js/main.8526422a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ce3dd1c.css",
-    "static/js/main.68369084.js"
+    "static/css/main.b0c987f2.css",
+    "static/js/main.8526422a.js"
   ]
 }
